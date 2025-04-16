@@ -27,5 +27,8 @@ public class Employee {
     public boolean checkEmployeeID() {
         return employeeID.contains("ST") && employeeID.length() >= 5;
     }
-    
+    //create a method to calculate net salary
+    public double calculateNetSalary(){
+        return hourlyRate * hoursWorked;
+    }
 }
